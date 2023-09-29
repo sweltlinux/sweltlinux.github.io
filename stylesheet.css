@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&family=Ubuntu&display=swap');
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px blue;
+}
+
+body {
+    font-family: 'Fira Code', monospace !important;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(gridback.gif);
+    text-shadow: 0px 0px 10px #ffffff;
+    text-align: center;
+}
+
+.heading {
+    font-family: 'Fira Code', monospace !important;
+    text-align: center;
+    color: black;
+    text-shadow: 0px 0px 10px #ffffff;
+}
+
+.heading pre {
+    font-size: 1vw;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+.navbar {
+    text-align: center;
+    height: 20pt;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.navbar .link {
+    font-family: 'Ubuntu', sans-serif !important;
+    color: black;
+    align: center;
+    display: inline-block;
+    width: 90px;
+    height: 20px;
+    margin: 0px;
+    padding-top: 2pt;
+    padding-bottom: 2pt;
+    text-decoration: none;
+    border: 1px black solid;
+    margin-left: 10pt;
+    margin-right: 10pt;
+    transition: background .35s, color .2s;
+}
+
+.navbar .link:hover {
+    color: white !important;
+    background-color: black;
+    text-shadow: none !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    border: 1px solid black;
+    width: auto;
+		min-width: 25vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    margin-bottom: 2em;
+    color: black;
+    text-align: center;
+}
+
+.tabtitle {
+    display: block;
+    font-size: 14px;
+    color: white;
+    background: black;
+    padding-left: 0.5em;
+    text-align: left;
+}
+
+.badges {
+    text-align: center;
+}
+
+.cozy {
+    display: block;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    position: fixed;
+}
+
+/* Mobile Formatting */
+@media (max-width: 768px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 100%;
+        max-width: 90vw;
+        margin: 1vw;
+    }
+}
+
